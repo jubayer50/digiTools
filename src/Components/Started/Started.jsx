@@ -16,10 +16,15 @@ const Started = () => {
           </p>
         </div>
 
+        {/* card div */}
         <div className="mt-10 flex flex-col md:flex-row justify-center items-center gap-7">
-          <div className="max-w-95 px-6 py-20 shadow rounded-lg">
+          <div className="max-w-95 px-6 py-20 shadow rounded-lg relative">
             <div className="h-25 w-25 rounded-full bg-[#9514FA20] flex justify-center items-center mx-auto mb-4">
               <img src={User} alt="" />
+            </div>
+
+            <div className="h-10 w-10 text-white rounded-full flex justify-center items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] absolute top-3 right-3">
+              <p>01</p>
             </div>
 
             <div className="text-center space-y-4">
@@ -31,9 +36,13 @@ const Started = () => {
             </div>
           </div>
 
-          <div className="max-w-95 px-6 py-20 shadow rounded-lg">
+          <div className="max-w-95 px-6 py-20 shadow rounded-lg relative">
             <div className="h-25 w-25 rounded-full bg-[#9514FA20] flex justify-center items-center mx-auto mb-4">
               <img src={Package} alt="" />
+            </div>
+
+            <div className="h-10 w-10 text-white rounded-full flex justify-center items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] absolute top-3 right-3">
+              <p>02</p>
             </div>
 
             <div className="text-center space-y-4">
@@ -44,9 +53,13 @@ const Started = () => {
             </div>
           </div>
 
-          <div className="max-w-95 px-6 py-20 shadow rounded-lg">
+          <div className="max-w-95 px-6 py-20 shadow rounded-lg relative">
             <div className="h-25 w-25 rounded-full bg-[#9514FA20] flex justify-center items-center mx-auto mb-4">
               <img src={Rocket} alt="" />
+            </div>
+
+            <div className="h-10 w-10 text-white rounded-full flex justify-center items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] absolute top-3 right-3">
+              <p>03</p>
             </div>
 
             <div className="text-center space-y-4">

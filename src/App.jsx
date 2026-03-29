@@ -3,6 +3,7 @@ import Banner from "./Components/Banner/Banner";
 import NavBar from "./Components/NavBar/NavBar";
 import Started from "./Components/Started/Started";
 import Stats from "./Components/Stats/Stats";
+import Transform from "./Components/Transform/Transform";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Stats></Stats>
 
       <Started></Started>
+
+      <Transform></Transform>
     </>
   );
 }
