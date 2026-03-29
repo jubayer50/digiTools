@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
+import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import Started from "./Components/Started/Started";
 import Stats from "./Components/Stats/Stats";
@@ -17,6 +18,8 @@ function App() {
       <Started></Started>
 
       <Transform></Transform>
+
+      <Footer></Footer>
     </>
   );
 }

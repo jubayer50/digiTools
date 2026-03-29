@@ -32,7 +32,7 @@ const NavBar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <GrCart></GrCart>
+          <GrCart className="cursor-pointer"></GrCart>
           <p className="font-medium md:font-semibold text-[#101727]">Login</p>
           <button className="btn rounded-full py-2 px-3 md:py-3 md:px-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-medium md:font-semibold text-white">
             Get Started
