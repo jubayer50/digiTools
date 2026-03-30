@@ -53,15 +53,15 @@ const Footer = () => {
               Social Links
             </h4>
             <div className="flex gap-3">
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white">
+              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white cursor-pointer">
                 <RiInstagramFill></RiInstagramFill>
               </div>
 
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white">
+              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white cursor-pointer">
                 <IoLogoFacebook></IoLogoFacebook>
               </div>
 
-              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white">
+              <div className="h-10 w-10 rounded-full flex justify-center items-center bg-white cursor-pointer">
                 <FaXTwitter></FaXTwitter>
               </div>
             </div>

@@ -6,7 +6,7 @@ const NavBar = () => {
     <div>
       <div className="max-w-300 mx-auto flex justify-between items-center py-4 px-1">
         <div>
-          <h2 className="text-2xl md:text-4xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent p-1">
+          <h2 className="text-2xl md:text-4xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent p-1 cursor-pointer">
             DigiTools
           </h2>
         </div>
@@ -33,7 +33,9 @@ const NavBar = () => {
 
         <div className="flex items-center gap-4">
           <GrCart className="cursor-pointer"></GrCart>
-          <p className="font-medium md:font-semibold text-[#101727]">Login</p>
+          <p className="font-medium md:font-semibold text-[#101727] cursor-pointer">
+            Login
+          </p>
           <button className="btn rounded-full py-2 px-3 md:py-3 md:px-4 bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-medium md:font-semibold text-white">
             Get Started
           </button>

@@ -1,0 +1,59 @@
+{
+  "currency": "USD",
+  "billing_cycle": "monthly",
+  "pricing_plans": [
+    {
+      "id": "starter_01",
+      "name": "Starter",
+      "tagline": "The Spark",
+      "price": 19,
+      "best_for": "Social Media Creators",
+      "features": [
+        "500 AI Generation Credits",
+        "1,000+ Basic Design Templates",
+        "10 Stock Photo Downloads",
+        "Personal Use License",
+        "Community Support"
+      ],
+      "button": "Get Started Free",
+      "highlighted": false,
+      "cta": "Start Creating"
+    },
+    {
+      "id": "professional_02",
+      "name": "Professional",
+      "tagline": "The Growth",
+      "price": 49,
+      "best_for": "Freelancers & Agencies",
+      "features": [
+        "2,500 AI Generation Credits",
+        "50,000+ Premium Design Templates",
+        "Unlimited Standard Stock Photos",
+        "Commercial License (Standard)",
+        "Priority Email Support",
+        "Batch Processing Tools"
+      ],
+      "button": "Start Pro Trial",
+      "highlighted": true,
+      "cta": "Upgrade to Pro"
+    },
+    {
+      "id": "enterprise_03",
+      "name": "Enterprise",
+      "tagline": "The Scale",
+      "price": 99,
+      "best_for": "Scaling Teams & Corporations",
+      "features": [
+        "Unlimited AI (Priority GPU)",
+        "Custom Brand Design Kits",
+        "Unlimited Premium & RAW Stock",
+        "Full Corporate Indemnity",
+        "24/7 Dedicated Account Manager",
+        "API Access & SSO"
+      ],
+      "button": "Contact Sales",
+      "highlighted": false,
+      "cta": "Contact Sales"
+    }
+  ]
+}
