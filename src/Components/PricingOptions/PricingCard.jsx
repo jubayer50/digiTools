@@ -2,7 +2,7 @@ import React from "react";
 import PricingFeatures from "./PricingFeatures";
 
 const PricingCard = ({ pricingPlan }) => {
-  console.log(pricingPlan);
+  // console.log(pricingPlan);
   return (
     <div
       className={`p-6 rounded-2xl flex flex-col ${pricingPlan.highlighted ? "text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-[#F9FAFC]"} border-2 border-[#F2F2F2] relative`}

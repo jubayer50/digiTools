@@ -14,7 +14,7 @@ const Transform = () => {
           </p>
 
           <div className="mt-10">
-            <div className="flex w-fit mx-auto flex-col gap-3 md:flex-row md:justify-center">
+            <div className="flex mx-auto flex-col gap-3 md:flex-row md:justify-center">
               <button className="btn bg-white rounded-full">
                 <span className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent">
                   Explore Products
