@@ -1,5 +1,7 @@
+import { useState } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
+import CartProducts from "./Components/CartProducts/CartProducts";
 import Footer from "./Components/Footer/Footer";
 import NavBar from "./Components/NavBar/NavBar";
 import PremiumDigital from "./Components/PremiumDigital/PremiumDigital ";
@@ -19,6 +21,8 @@ const pricingPromise = getPricingPromise();
 const productsPromise = fetch("/products.json").then((res) => res.json());
 
 function App() {
+  const [tabsActive, setTabsActive] = useState("products");
+
   return (
     <>
       <NavBar></NavBar>
@@ -29,9 +33,13 @@ function App() {
 
       <PremiumDigital></PremiumDigital>
 
-      <Tabs></Tabs>
+      <Tabs setTabsActive={setTabsActive}></Tabs>
 
-      <Products productsPromise={productsPromise}></Products>
+      {tabsActive === "products" && (
+        <Products productsPromise={productsPromise}></Products>
+      )}
+
+      {tabsActive === "cart" && <CartProducts></CartProducts>}
 
       <Started></Started>
 
