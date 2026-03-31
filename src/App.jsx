@@ -22,6 +22,12 @@ const productsPromise = fetch("/products.json").then((res) => res.json());
 
 function App() {
   const [tabsActive, setTabsActive] = useState("products");
+  const [carts, setCarts] = useState([]);
+
+  const cartsUpdate = (product) => {
+    // console.log(product);
+    setCarts([...carts, product]);
+  };
 
   return (
     <>
@@ -36,10 +42,13 @@ function App() {
       <Tabs setTabsActive={setTabsActive}></Tabs>
 
       {tabsActive === "products" && (
-        <Products productsPromise={productsPromise}></Products>
+        <Products
+          productsPromise={productsPromise}
+          cartsUpdate={cartsUpdate}
+        ></Products>
       )}
 
-      {tabsActive === "cart" && <CartProducts></CartProducts>}
+      {tabsActive === "cart" && <CartProducts carts={carts}></CartProducts>}
 
       <Started></Started>
 

@@ -1,8 +1,13 @@
 import React from "react";
 import ProductFeatures from "./ProductFeatures";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, cartsUpdate }) => {
   const { name, icon, description, period, price, tag, features } = product;
+  const handleBuyNowBtn = () => {
+    cartsUpdate(product);
+    // cartsUpdate()
+  };
+  // console.log(product);
   return (
     <div className="">
       <div className="space-y-4 text-[#627382] p-6 rounded-2xl border-2 border-[#F2F2F2] relative">
@@ -36,7 +41,10 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div>
-          <button className="btn bg-linear-to-r w-full from-[#4F39F6] to-[#9514FA] text-white rounded-full">
+          <button
+            onClick={handleBuyNowBtn}
+            className="btn bg-linear-to-r w-full from-[#4F39F6] to-[#9514FA] text-white rounded-full"
+          >
             Buy Now
           </button>
         </div>
