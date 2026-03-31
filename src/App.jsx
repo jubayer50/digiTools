@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
+      <NavBar carts={carts}></NavBar>
 
       <Banner></Banner>
 
@@ -39,7 +39,7 @@ function App() {
 
       <PremiumDigital></PremiumDigital>
 
-      <Tabs setTabsActive={setTabsActive}></Tabs>
+      <Tabs setTabsActive={setTabsActive} carts={carts}></Tabs>
 
       {tabsActive === "products" && (
         <Products
