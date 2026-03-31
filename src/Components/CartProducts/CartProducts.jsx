@@ -34,7 +34,7 @@ const CartProducts = ({ carts, setCarts }) => {
         <div>
           <div className="flex justify-between mt-6 px-4">
             <h3>Total:</h3>
-            <p>{totalPrice}</p>
+            <p>${totalPrice}</p>
           </div>
 
           <button

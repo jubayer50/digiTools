@@ -46,7 +46,11 @@ function App() {
 
       <PremiumDigital></PremiumDigital>
 
-      <Tabs setTabsActive={setTabsActive} carts={carts}></Tabs>
+      <Tabs
+        tabsActive={tabsActive}
+        setTabsActive={setTabsActive}
+        carts={carts}
+      ></Tabs>
 
       {tabsActive === "products" && (
         <Products
