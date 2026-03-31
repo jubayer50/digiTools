@@ -6,7 +6,7 @@ import { IoPlayOutline } from "react-icons/io5";
 const Banner = () => {
   return (
     <div>
-      <div className="max-w-300 mx-auto px-1.5 mt-20 flex flex-col-reverse md:flex-row md:items-center gap-16">
+      <div className="max-w-300 mx-auto px-1.5 mt-20 flex flex-col-reverse items-center lg:flex-row lg:items-center gap-16">
         <div className="max-w-158.5">
           <p className="bg-[#E1E7FF] py-2 px-4 rounded-full w-fit font-medium flex items-center gap-2">
             <img src={CircleImg} alt="" />
@@ -38,8 +38,8 @@ const Banner = () => {
           </div>
         </div>
 
-        <div>
-          <img className="max-w-full" src={BannerImg} alt="" />
+        <div className="max-w-full">
+          <img className="max-w-full w-full" src={BannerImg} alt="" />
         </div>
       </div>
     </div>

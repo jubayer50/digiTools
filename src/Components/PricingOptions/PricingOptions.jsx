@@ -16,7 +16,7 @@ const PricingOptions = ({ pricingPromise }) => {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center gap-8 mt-10">
+      <div className="flex flex-col lg:flex-row justify-center gap-8 mt-10">
         {pricingPlans.map((pricingPlan) => (
           <PricingCard
             key={pricingPlan.id}

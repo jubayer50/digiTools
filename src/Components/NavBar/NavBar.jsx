@@ -6,13 +6,13 @@ const NavBar = ({ carts }) => {
     <div className="sticky top-0 bg-white z-10 border-b  border-[#F2F2F2]">
       <div className="max-w-300 mx-auto flex justify-between items-center py-4 px-1">
         <div>
-          <h2 className="text-2xl md:text-4xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent p-1 cursor-pointer">
+          <h2 className="text-2xl lg:text-4xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent p-1 cursor-pointer">
             DigiTools
           </h2>
         </div>
 
         <div className="hidden md:block">
-          <ul className="flex gap-8 font-semibold text-[#101727]">
+          <ul className="flex gap-3 lg:gap-8 font-semibold text-[#101727]">
             <li>
               <a href="">Products</a>
             </li>
