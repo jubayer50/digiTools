@@ -49,7 +49,7 @@ const ProductCard = ({ product, cartsUpdate }) => {
             onClick={handleBuyNowBtn}
             className="btn bg-linear-to-r w-full from-[#4F39F6] to-[#9514FA] text-white rounded-full"
           >
-            {addToCart ? "Added to Cart" : "Add to Cart"}
+            {addToCart ? "Added to Cart" : "Buy Now"}
           </button>
         </div>
       </div>
