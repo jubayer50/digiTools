@@ -25,8 +25,14 @@ function App() {
   const [carts, setCarts] = useState([]);
 
   const cartsUpdate = (product) => {
-    // console.log(product);
-    setCarts([...carts, product]);
+    const isExisting = carts.find((item) => item.id == product.id);
+
+    if (!isExisting) {
+      setCarts([...carts, product]);
+      alert("Item added in the cart!");
+    } else {
+      alert("Already this item in the cart!");
+    }
   };
 
   return (
@@ -48,7 +54,9 @@ function App() {
         ></Products>
       )}
 
-      {tabsActive === "cart" && <CartProducts carts={carts}></CartProducts>}
+      {tabsActive === "cart" && (
+        <CartProducts carts={carts} setCarts={setCarts}></CartProducts>
+      )}
 
       <Started></Started>
 

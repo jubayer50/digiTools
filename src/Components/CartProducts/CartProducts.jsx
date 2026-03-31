@@ -1,8 +1,17 @@
 import React from "react";
 import CartProduct from "../CartProduct/CartProduct";
+import EmptyCart from "./EmptyCart";
 
-const CartProducts = ({ carts }) => {
+const CartProducts = ({ carts, setCarts }) => {
   // console.log(carts);
+
+  const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
+
+  const handleCheckOut = () => {
+    setCarts([]);
+    alert("Payment Success!");
+  };
+
   return (
     <div className="max-w-300 mx-auto mt-10 border-2 border-[#F2F2F2] rounded-2xl px-2 p-5 md:p-10">
       <div className="">
@@ -11,19 +20,32 @@ const CartProducts = ({ carts }) => {
 
       <div className="mt-6 space-y-4">
         {carts.map((cart) => (
-          <CartProduct key={cart.id} cart={cart}></CartProduct>
+          <CartProduct
+            key={cart.id}
+            cart={cart}
+            carts={carts}
+            setCarts={setCarts}
+          ></CartProduct>
         ))}
       </div>
 
-      <div>
-        <div className="flex justify-between mt-6 px-4">
-          <h3>Total:</h3>
-          <p>0</p>
+      {carts.length > 0 && (
+        <div>
+          <div className="flex justify-between mt-6 px-4">
+            <h3>Total:</h3>
+            <p>{totalPrice}</p>
+          </div>
+
+          <button
+            onClick={handleCheckOut}
+            className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white text-xl font-bold py-6 mt-6"
+          >
+            Proceed to Checkout
+          </button>
         </div>
-        <button className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full text-white text-xl font-bold py-6 mt-6">
-          Proceed to Checkout
-        </button>
-      </div>
+      )}
+
+      {carts.length === 0 && <EmptyCart></EmptyCart>}
     </div>
   );
 };

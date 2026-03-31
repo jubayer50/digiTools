@@ -1,6 +1,14 @@
 import React from "react";
 
-const CartProduct = ({ cart }) => {
+const CartProduct = ({ cart, carts, setCarts }) => {
+  const handleRemove = (cart) => {
+    const newCart = carts.filter((item) => item.id !== cart.id);
+
+    setCarts(newCart);
+
+    alert("Item remove from the cart!");
+  };
+
   return (
     <div>
       <div className=" bg-[#F9FAFC] rounded-2xl p-6">
@@ -19,7 +27,14 @@ const CartProduct = ({ cart }) => {
           </div>
 
           <div>
-            <h3 className="text-[#FF3980] font-bold cursor-pointer">Remove</h3>
+            <h3
+              onClick={() => {
+                handleRemove(cart);
+              }}
+              className="text-[#FF3980] font-bold cursor-pointer"
+            >
+              Remove
+            </h3>
           </div>
         </div>
       </div>

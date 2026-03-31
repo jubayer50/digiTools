@@ -3,7 +3,7 @@ import { GrCart } from "react-icons/gr";
 
 const NavBar = ({ carts }) => {
   return (
-    <div>
+    <div className="sticky top-0 bg-white z-10 border-b  border-[#F2F2F2]">
       <div className="max-w-300 mx-auto flex justify-between items-center py-4 px-1">
         <div>
           <h2 className="text-2xl md:text-4xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-fit bg-clip-text text-transparent p-1 cursor-pointer">
