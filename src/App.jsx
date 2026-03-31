@@ -11,6 +11,7 @@ import Started from "./Components/Started/Started";
 import Stats from "./Components/Stats/Stats";
 import Tabs from "./Components/Tabs/Tabs";
 import Transform from "./Components/Transform/Transform";
+import { toast, ToastContainer } from "react-toastify";
 
 const getPricingPromise = async () => {
   const res = await fetch("/pricingCard.json");
@@ -29,9 +30,9 @@ function App() {
 
     if (!isExisting) {
       setCarts([...carts, product]);
-      alert("Item added in the cart!");
+      toast.success("Item added in the cart!");
     } else {
-      alert("Already this item in the cart!");
+      toast.warn("Already this item in the cart!");
     }
   };
 
@@ -57,6 +58,8 @@ function App() {
       {tabsActive === "cart" && (
         <CartProducts carts={carts} setCarts={setCarts}></CartProducts>
       )}
+
+      <ToastContainer></ToastContainer>
 
       <Started></Started>
 

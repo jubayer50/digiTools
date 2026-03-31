@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const CartProduct = ({ cart, carts, setCarts }) => {
   const handleRemove = (cart) => {
@@ -6,7 +7,7 @@ const CartProduct = ({ cart, carts, setCarts }) => {
 
     setCarts(newCart);
 
-    alert("Item remove from the cart!");
+    toast.success("Item remove from the cart!");
   };
 
   return (
