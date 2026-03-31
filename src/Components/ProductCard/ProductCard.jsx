@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ProductFeatures from "./ProductFeatures";
 
 const ProductCard = ({ product, cartsUpdate }) => {
+  const [addToCart, setAddToCart] = useState(false);
+
   const { name, icon, description, period, price, tag, features } = product;
+
   const handleBuyNowBtn = () => {
     cartsUpdate(product);
     // cartsUpdate()
+    setAddToCart(true);
   };
   // console.log(product);
   return (
@@ -45,7 +49,7 @@ const ProductCard = ({ product, cartsUpdate }) => {
             onClick={handleBuyNowBtn}
             className="btn bg-linear-to-r w-full from-[#4F39F6] to-[#9514FA] text-white rounded-full"
           >
-            Buy Now
+            {addToCart ? "Added to Cart" : "Add to Cart"}
           </button>
         </div>
       </div>
