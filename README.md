@@ -19,6 +19,12 @@ This is an amazing React project called DigiTools. Where someone can take a subs
 
 ---
 
+## Repository and Live Links:
+- Repository: https://github.com/jubayer50/digiTools
+- Live link: https://digi-tools-jubayer50.netlify.app/
+
+---
+
 ![digiTools2](https://github.com/user-attachments/assets/9f203d15-5217-48ef-a428-584dc22068d0)
 
 ##
